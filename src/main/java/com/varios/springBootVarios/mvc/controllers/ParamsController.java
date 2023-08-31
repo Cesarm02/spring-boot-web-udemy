@@ -1,4 +1,4 @@
-package com.varios.springBootVarios.controllers;
+package com.varios.springBootVarios.mvc.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

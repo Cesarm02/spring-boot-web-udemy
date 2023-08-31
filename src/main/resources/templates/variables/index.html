@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Index params</title>
+</head>
+<body>
+    <h1> Send path variable</h1>
+    <ul>
+        <li> <a th:href="@{/variables/string/} + 'Hello'">/variables/string/string1</a></li>
+        <li> <a th:href="@{/variables/string/} + ${'Hello1'} + ${'/1'}">/variables/string/string2</a></li>
+    </ul>
+</body>
+</html>

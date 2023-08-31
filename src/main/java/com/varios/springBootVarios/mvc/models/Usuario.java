@@ -1,4 +1,4 @@
-package com.varios.springBootVarios.models;
+package com.varios.springBootVarios.mvc.models;
 
 public class Usuario {
     public Usuario(String nombre, String apellido, String email) {

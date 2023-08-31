@@ -1,19 +1,26 @@
-package com.varios.springBootVarios.controllers;
+package com.varios.springBootVarios.mvc.controllers;
 
-import com.varios.springBootVarios.models.Usuario;
+import com.varios.springBootVarios.mvc.models.Usuario;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 @Controller
 @RequestMapping("/app")
 public class IndexController {
+
+    @Value("texto.indexcontroller.index.titulo")
+    private String textoIndex;
+    @Value("texto.indexcontroller.index.texto")
+    private String textoPerfil;
+    @Value("texto.indexcontroller.index.list")
+    private String textoList;
 
     @GetMapping(value = {"/index", "/", "/home"})
     public String index(Model mv){
